@@ -3,27 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso em Vídeo</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <title>Blog de Viagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .post {
+            background: #fff;
+            padding: 1rem;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .post h2 {
+            color: #333;
+        }
+        .post p {
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <header>
-            <h1>Cursos Grátis</h1>
-            <img src="imagens/curso-em-video-cor.png" alt="Curso em Vídeo">
-        </header>
-        <article>
-            <h2>Curso de HTML5 com CSS3</h2>
-            <img class="lado" src="imagens/curso-html-css.png" alt="Curso HTML">
-            <p>A <abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem de marcação para a criação de sites. Atualmente na versão 5, ela usa a semântica dos elementos para criar o conteúdo de uma página Web. Com as <abbr title="Cascading Style Sheets">CSS</abbr>, criamos as configurações visuais que um site vai ter.</p>
-            <p><a href="curso-html.html">Acesse o curso de HTML5</a></p>
-        </article>
-        <article>
-            <h2>Curso de JavaScript</h2>
-            <img class="lado" src="imagens/curso-javascript.png" alt="Curso JS">
-            <p><abbr title="JavaScript">JavaScript</abbr> é uma linguagem de script criada para aumentar a interatividade entre um site e seus visitantes. Os códigos em JS são executados dentro do navegador e dão acesso aos elementos HTML por meio do <abbr title="Document Object Model">DOM</abbr>.</p>
-            <p><a href="curso-js.html">Acesse o curso de JavaScript</a></p>
-        </article>
-    </main>
+    <header>
+        <h1>Blog de Viagens</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Destinos</a>
+        <a href="#">Dicas</a>
+        <a href="#">Contato</a>
+    </nav>
+    <div class="container">
+        <div class="post">
+            <h2>Minha primeira viagem</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu ante porttitor, eget convallis risus facilisis. Quisque efficitur auctor urna id tincidunt.</p>
+            <a href="#">Leia mais...</a>
+        </div>
+        <div class="post">
+            <h2>Destinos imperdíveis</h2>
+            <p>Curabitur sit amet efficitur velit. Nullam gravida arcu ut mi tincidunt, quis consectetur arcu venenatis. Aenean nec sem eget odio suscipit lacinia.</p>
+            <a href="#">Leia mais...</a>
+        </div>
+        <div class="post">
+            <h2>Dicas de viagem</h2>
+            <p>Vestibulum vel est a erat tempus eleifend. Integer sed risus ut arcu tristique commodo. Donec fringilla nunc eu ipsum facilisis, et gravida neque dapibus.</p>
+            <a href="#">Leia mais...</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Blog de Viagens. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
